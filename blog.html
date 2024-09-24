@@ -11,8 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
   <!-- CSS -->
    <style>
+    
     *{
       font-family: "Lexend", sans-serif;
     }
@@ -37,6 +43,39 @@
             </div>
           </div>
     </header>
+
+    <section class="space-y-4 px-20 mt-10">
+        <h1 class="text-4xl font-bold">Important FAQ <i class='bx bx-message-rounded-error'></i></h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface that represents the structure of a web page, allowing scripts to interact with and manipulate HTML or XML documents dynamically.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, use methods like document.getElementById('id') for selecting by ID or document.querySelector('selector') for selecting the first element matching a CSS selector. For multiple elements, use document.querySelectorAll('selector') or document.getElementsByClassName('class').</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element to handle events on its child elements, using event bubbling. It is useful because it improves performance and simplifies handling events for dynamically added elements.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate an element's attributes in the DOM, use methods like setAttribute() to change attributes and getAttribute() to retrieve them. For styles, modify the style property directly (e.g., element.style.color = 'red') or use classList to add or remove CSS classes.</p>
+            </div>
+          </div>
+    </section>
     
     <script src="common.js"></script>
     <script src="donation.js"></script>
