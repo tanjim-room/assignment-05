@@ -18,12 +18,15 @@ function updateDonation(id,totalDonation){
     document.getElementById(id).innerText = totalDonation;
 }
 
-// Update Total Donation
-function updateTotalDonation(id){
-    const currentDonationTotal = getDonationStatusnMoney('Nk-Donation')+
-                                 getDonationStatusnMoney('Feni-Donation')+
-                                 getDonationStatusnMoney('Quota-Donation');
-
-    document.getElementById(id).innerText = currentDonationTotal;
+// Get Total Donation
+function getTotalDonation(id){
+    const total = Number(document.getElementById(id).innerText);
+    return total;
 }
 
+// Update Total Donation
+function updateTotalDonation(id,donation){
+    const updateTotalBalance = Number(document.getElementById(id).innerText) - donation;
+    document.getElementById(id).innerText = updateTotalBalance;
+
+}

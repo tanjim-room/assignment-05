@@ -3,13 +3,15 @@
 document.getElementById("Nk-Donate-Btn").addEventListener('click',function(){
     const currentDonation = getDonationStatusnMoney('Nk-Donation');
     const inputDonation = getInputDonationMoney('Nk-Donate-Input');
-    if(inputDonation > 0 && typeof inputDonation === 'number'){
+    const totalBalanceAmount = getTotalDonation('donation-Total');
+
+    if(inputDonation > 0 && typeof inputDonation === 'number' && totalBalanceAmount > 0 && totalBalanceAmount >= inputDonation){
     const totalDonation = currentDonation + inputDonation;
     updateDonation('Nk-Donation',totalDonation);
-    updateTotalDonation('donation-Total');
+    updateTotalDonation('donation-Total',inputDonation);
     }
     else{
-        alert("Please enter positive integer!!!");
+        alert("Please enter positive integer or Balance Low!!!");
     }
 });
 
@@ -18,14 +20,15 @@ document.getElementById("Nk-Donate-Btn").addEventListener('click',function(){
 document.getElementById("Feni-Donate-Btn").addEventListener('click',function(){
     const currentDonation = getDonationStatusnMoney('Feni-Donation');
     const inputDonation = getInputDonationMoney('Feni-Donate-Input');
+    const totalBalanceAmount = getTotalDonation('donation-Total');
 
-    if(inputDonation > 0 && typeof inputDonation === 'number'){
+    if(inputDonation > 0 && typeof inputDonation === 'number'  && totalBalanceAmount > 0 && totalBalanceAmount >= inputDonation){
     const totalDonation = currentDonation + inputDonation;
     updateDonation('Feni-Donation',totalDonation);
-    updateTotalDonation('donation-Total');
+    updateTotalDonation('donation-Total',inputDonation);
     }
     else{
-        alert("Please enter positive integer!!!");
+        alert("Please enter positive integer or Balance Low!!!");
     }
     
 });
@@ -35,21 +38,22 @@ document.getElementById("Feni-Donate-Btn").addEventListener('click',function(){
 document.getElementById("Quota-Donate-Btn").addEventListener('click',function(){
     const currentDonation = getDonationStatusnMoney('Quota-Donation');
     const inputDonation = getInputDonationMoney('Quota-Donate-Input');
-    
-    if(inputDonation > 0 && typeof inputDonation === 'number'){
+    const totalBalanceAmount = getTotalDonation('donation-Total');
+
+    if(inputDonation > 0 && typeof inputDonation === 'number'  && totalBalanceAmount > 0 && totalBalanceAmount >= inputDonation){
         const totalDonation = currentDonation + inputDonation;
         updateDonation('Quota-Donation',totalDonation);
-        updateTotalDonation('donation-Total');
+        updateTotalDonation('donation-Total',inputDonation);
     }
     else{
-        alert("Please enter positive integer!!!");
+        alert("Please enter positive integer or Balance Low!!!");
     }
 });
 
 
 
 // Update Total Donation
-updateTotalDonation('donation-Total');
+
 
 
 
