@@ -9,6 +9,27 @@ document.getElementById("Nk-Donate-Btn").addEventListener('click',function(){
     const totalDonation = currentDonation + inputDonation;
     updateDonation('Nk-Donation',totalDonation);
     updateTotalDonation('donation-Total',inputDonation);
+
+    // History Create
+    // const div = document.createElement("div");
+    // document.getElementById("History-Section").appendChild(div);
+    // div.classList.add('card px-5 mx-20 bg-base-100s shadow-xl');
+    // const div2 = document.createElement("div");
+    // div.appendChild(div2);
+    // div.classList.add('card-body');
+    // const title = document.createElement("h2");
+    // title.innerText = `${inputDonation} Taka is Donated for famine-2024 at Noakhali, Bangladesh`;
+    // document.getElementById("History-Section").appendChild(h2);
+    // title.classList.add('card-title');
+    const h2 = document.createElement("h2");
+    h2.innerText = `${inputDonation} Taka is Donated for famine-2024 at Noakhali, Bangladesh`;
+    document.getElementById("History-Section").appendChild(h2);
+    h2.classList.add('text-3xl');
+
+    const p = document.createElement("p");
+    p.innerText = `Date: ${getCurrentDateTime()}`;
+    document.getElementById('History-Section').appendChild(p);
+
     }
     else{
         alert("Please enter positive integer or Balance Low!!!");
@@ -26,6 +47,16 @@ document.getElementById("Feni-Donate-Btn").addEventListener('click',function(){
     const totalDonation = currentDonation + inputDonation;
     updateDonation('Feni-Donation',totalDonation);
     updateTotalDonation('donation-Total',inputDonation);
+
+    //History Create
+    const h2 = document.createElement("h2");
+    h2.innerText = `${inputDonation} Taka is Donated for Flood Relief in Feni,Bangladesh`;
+    document.getElementById("History-Section").appendChild(h2);
+    h2.classList.add('text-3xl');
+
+    const p = document.createElement("p");
+    p.innerText = `Date: ${getCurrentDateTime()}`;
+    document.getElementById('History-Section').appendChild(p);
     }
     else{
         alert("Please enter positive integer or Balance Low!!!");
@@ -44,6 +75,16 @@ document.getElementById("Quota-Donate-Btn").addEventListener('click',function(){
         const totalDonation = currentDonation + inputDonation;
         updateDonation('Quota-Donation',totalDonation);
         updateTotalDonation('donation-Total',inputDonation);
+
+        // History Create
+        const h2 = document.createElement("h2");
+    h2.innerText = `${inputDonation} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
+    document.getElementById("History-Section").appendChild(h2);
+    h2.classList.add('text-3xl');
+
+    const p = document.createElement("p");
+    p.innerText = `Date: ${getCurrentDateTime()}`;
+    document.getElementById('History-Section').appendChild(p);
     }
     else{
         alert("Please enter positive integer or Balance Low!!!");
@@ -51,9 +92,21 @@ document.getElementById("Quota-Donate-Btn").addEventListener('click',function(){
 });
 
 
-// document.getElementById("History-Btn").addEventListener('click', function(){
-//     document.getElementById('History-Btn').style.backgroundColor = 'green';
-// });
+document.getElementById("History-Btn").addEventListener('click', function(){
+    document.getElementById('History-Btn').style.backgroundColor = '#B4F461';
+    document.getElementById("Donate-Btn").style.backgroundColor = 'white';
+    showDonationHistory("History-Section");
+});
+
+document.getElementById("Donate-Btn").addEventListener('click', function(){
+    document.getElementById('History-Btn').style.backgroundColor = 'white';
+    document.getElementById("Donate-Btn").style.backgroundColor = '#B4F461';
+    showDonationHistory("Donation-Section");
+    
+});
+
+
+
 
 
 
