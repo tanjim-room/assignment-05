@@ -14,13 +14,13 @@ document.getElementById("Nk-Donate-Btn").addEventListener('click',function(){
     const h2 = document.createElement("h2");
     h2.innerText = `${inputDonation} Taka is Donated for famine-2024 at Noakhali, Bangladesh`;
     document.getElementById("History-Section").appendChild(h2);
-    h2.classList.add('text-2xl', 'px-20');
+    h2.classList.add('text-2xl');
    
 
     const p = document.createElement("p");
     p.innerText = `Date: ${getCurrentDateTime()}`;
     document.getElementById('History-Section').appendChild(p);
-    p.classList.add('mb-5', 'px-20');
+    p.classList.add('mb-5');
 
     // 
     const modal = document.getElementById('my_modal_5');
@@ -48,13 +48,13 @@ document.getElementById("Feni-Donate-Btn").addEventListener('click',function(){
     const h2 = document.createElement("h2");
     h2.innerText = `${inputDonation} Taka is Donated for Flood Relief in Feni,Bangladesh`;
     document.getElementById("History-Section").appendChild(h2);
-    h2.classList.add('text-2xl', 'px-20');
+    h2.classList.add('text-2xl');
    
 
     const p = document.createElement("p");
     p.innerText = `Date: ${getCurrentDateTime()}`;
     document.getElementById('History-Section').appendChild(p);
-    p.classList.add('mb-5', 'px-20');
+    p.classList.add('mb-5');
 
     const modal = document.getElementById('my_modal_5');
     modal.showModal();
@@ -81,13 +81,13 @@ document.getElementById("Quota-Donate-Btn").addEventListener('click',function(){
     const h2 = document.createElement("h2");
     h2.innerText = `${inputDonation} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
     document.getElementById("History-Section").appendChild(h2);
-    h2.classList.add('text-2xl', 'px-20');
+    h2.classList.add('text-2xl');
    
 
     const p = document.createElement("p");
     p.innerText = `Date: ${getCurrentDateTime()}`;
     document.getElementById('History-Section').appendChild(p);
-    p.classList.add('mb-5', 'px-20');
+    p.classList.add('mb-5');
 
     const modal = document.getElementById('my_modal_5');
     modal.showModal();
