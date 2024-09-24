@@ -22,6 +22,10 @@ document.getElementById("Nk-Donate-Btn").addEventListener('click',function(){
     document.getElementById('History-Section').appendChild(p);
     p.classList.add('mb-5', 'px-20');
 
+    // 
+    const modal = document.getElementById('my_modal_5');
+    modal.showModal();
+
     }
     else{
         alert("Please enter positive integer or Balance Low!!!");
@@ -51,6 +55,9 @@ document.getElementById("Feni-Donate-Btn").addEventListener('click',function(){
     p.innerText = `Date: ${getCurrentDateTime()}`;
     document.getElementById('History-Section').appendChild(p);
     p.classList.add('mb-5', 'px-20');
+
+    const modal = document.getElementById('my_modal_5');
+    modal.showModal();
     }
     else{
         alert("Please enter positive integer or Balance Low!!!");
@@ -81,6 +88,9 @@ document.getElementById("Quota-Donate-Btn").addEventListener('click',function(){
     p.innerText = `Date: ${getCurrentDateTime()}`;
     document.getElementById('History-Section').appendChild(p);
     p.classList.add('mb-5', 'px-20');
+
+    const modal = document.getElementById('my_modal_5');
+    modal.showModal();
     }
     else{
         alert("Please enter positive integer or Balance Low!!!");
