@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Daisy UI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Donate Bangladesh</title>
+</head>
+<body class="max-w-screen-2xl mx-auto">
+    <header>
+        <div class="navbar bg-[#F9F7F3] px-20 pb-[40px]">
+            <div class="navbar-start">
+              <a class="btn bg-[#B4F461] text-lg">Blog</a>
+            </div>
+            <div class="navbar-center gap-3">
+              <img src="assets/logo.png" alt="">
+              <h2 class="text-lg font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="navbar-end gap-2">
+              <img src="assets/coin.png" alt="">
+              <p class="text-lg font-semibold"><span id="donation-Total">000</span> BDT</p>
+            </div>
+          </div>
+    </header>
+    <section class="mt-10">
+      <div class="flex justify-center gap-5">
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">Donation</button>
+        <a href="history.html">
+          <button class="btn bg-transparent btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="flex flex-col gap-5">
+      <section class="px-20">
+        <div class="card lg:card-side bg-base-100 shadow-xl flex px-10 py-10">
+          <div class="flex-1">
+            <img
+              src="assets/noakhali.png"
+              alt="Album" />
+          </div>
+          <div class="card-body flex-1 pl-0">
+            <div>
+              <button class="btn">
+                <img src="assets/coin.png" alt="">
+                <div class=""><span id="Nk-Donation">0</span> BDT</div>
+              </button>
+            </div>
+            
+            <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+            <p>Severe floods have devastated Noakhali, leaving thousands in urgent need of food, clean water, and shelter. Your donation can provide critical relief to affected families, helping them rebuild their lives. Every contribution counts, no matter the size. Act now to make a difference and bring hope to those in need. Donate today and help save lives.</p>
+            <div class="flex flex-col gap-5">
+              <input
+              type="text" id="Nk-Donate-Input"
+              placeholder="Write Donation Amount"
+              class="input input-bordered input-md w-full" />
+              <button id="Nk-Donate-Btn" class="btn btn-wide w-full bg-[#B4F461] text-lg">Donate Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="px-20">
+        <div class="card lg:card-side bg-base-100 shadow-xl flex px-10 py-10">
+          <div class="flex-1">
+            <img
+              src="assets/feni.png"
+              alt="Album" />
+          </div>
+          <div class="card-body flex-1 pl-0">
+            <div>
+              <button class="btn">
+                <img src="assets/coin.png" alt="">
+                <div class=""><span id="Feni-Donation">5000</span> BDT</div>
+              </button>
+            </div>
+            
+            <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+            <p>The recent floods in Feni have displaced families, destroyed homes, and created an urgent need for humanitarian aid. Your donation can provide essential supplies like food, water, and medical care to those affected. Together, we can help rebuild lives and restore hope in this difficult time. Donate now to make a meaningful impact.</p>
+            <div class="flex flex-col gap-5">
+              <input
+              type="text" id="Feni-Donate-Input"
+              placeholder="Write Donation Amount"
+              class="input input-bordered input-md w-full" />
+              <button class="btn btn-wide w-full bg-[#B4F461] text-lg" id="Feni-Donate-Btn">Donate Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-20">
+        <div class="card lg:card-side bg-base-100 shadow-xl flex px-10 py-10">
+          <div class="flex-1">
+            <img
+              src="assets/quota-protest.png"
+              alt="Album" />
+          </div>
+          <div class="card-body flex-1 pl-0">
+            <div>
+              <button class="btn">
+                <img src="assets/coin.png" alt="">
+                <div class=""><span id="Quota-Donation">500</span> BDT</div>
+              </button>
+            </div>
+            
+            <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+            <p>Support those who were injured during the Quota Reform Movement in Bangladesh. Many brave individuals suffered injuries while fighting for equality and justice. Your donation can provide vital medical care, rehabilitation, and financial assistance to help them recover and rebuild their lives. Donate now to stand in solidarity with these courageous individuals and make a difference.
+            </p>
+            <div class="flex flex-col gap-5">
+              <input
+              type="text" id="Quota-Donate-Input"
+              placeholder="Write Donation Amount"
+              class="input input-bordered input-md w-full" />
+              <button class="btn btn-wide w-full bg-[#B4F461] text-lg" id="Quota-Donate-Btn">Donate Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    
+    <script src="common.js"></script>
+    <script src="donation.js"></script>
+</body>
+</html>
